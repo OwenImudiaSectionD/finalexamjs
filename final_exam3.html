@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final exam</title>
+    
+</head>
+<body>
+    <button id="btn">Hello</button>
+    
+
+    <input type="text" id="examText" placeholder="Will I pass?">
+    <button id="btn1">Log button</button>
+    <script>
+        let btn1 = document.getElementById("btn1")
+        let button=document.getElementById("btn")
+        button.addEventListener("click", function(){
+            button.textContent="I've been clicked";
+        });
+
+        let examText = document.getElementById("examText");
+        examText.addEventListener("input", function(){
+            console.log(`value is ${examText.value}`);
+        })
+        btn1.addEventListener("click", function(){
+            console.log(`logged value is ${examText.value}`)
+        })
+    </script>
+</body>
+</html>
